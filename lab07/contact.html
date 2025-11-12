@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Contact Form</title>
+    </head>
+    <nav>
+      <ul>
+        <li><a href="tierlist.html">Tier List</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+      </ul>
+    </nav>
+    <form method="post" aria-label="Contact Form">
+        <div>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+        <div>
+            <label for="message">Comments:</label>
+            <br>
+            <textarea id="message" name="message" placeholder="Share Your Thoughts"></textarea>
+        </div>
+        <div>
+            <label>Have you ever watched a korean tv series?</label>
+            <br>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="Yes" name="watched" value="Yes">
+
+            <label for="No">No</label>
+            <input type="radio" id="No" name="watched" value="No" >
+        </div>
+        <div>
+            <label for="quantity">If yes, how many shows from the tier list have you watched?</label>
+            <br>
+            <input type="number" id="quantity" name="quantity" min="0" max="6" value="0">
+        </div>
+        <div>
+            <label for="favorite">Choose your most favorite show</label>
+            <br>
+            <select id="favorite" name="favorite">
+                <option value="">Please Select</option>
+                <option value="Vincenzo">Vincenzo</option>
+                <option value="LittleWomen">Little Women</option>
+                <option value="WhenLifeGivesyouTangerines">When Life Gives you Tangerines</option>
+                <option value="BusinessProposal">Business Proposal</option>
+                <option value="ExtraordinaryAttorneyWoo">Extraordinary Attorney Woo</option>
+                <option value="Hometown-Cha-Cha-Cha">Hometown-Cha-Cha-Cha</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</html>
