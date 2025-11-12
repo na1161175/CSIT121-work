@@ -1,0 +1,107 @@
+nav {
+  overflow: hidden;
+  background-color: #522d02;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #e9dccf;
+}
+
+nav li {
+  margin-right: 25px;
+  text-align: center;
+  display:inline-flex;
+}
+
+nav li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #522d02;
+}
+
+nav a:hover {
+  background-color: #a1c4c5;
+}
+
+.highlight{
+  background-color: #e9dccf;
+  font-size:1.2em;
+  font-weight: bold;
+  color: #522d02;
+}
+
+* {
+  font-family: 'Calibri'; 
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.2em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #522d02;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #d6e3e9;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+div{
+   padding: 20px 20px;
+   background-color: #e3d7cb;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+
+input{
+  background-color: whitesmoke;
+  border: solid 2px #000000;
+  padding: 8px;
+}
+
+textarea{
+  background-color: whitesmoke;
+  border: solid 2px #000000;
+  padding: 8px;
+}
+
+select{
+  background-color: whitesmoke;
+  border: solid 2px #000000;
+  padding: 8px;
+}
+button{
+  background-color: #d6e3e9;
+  height: 30px;
+  width:80px;
+  font-size: large;
+}
