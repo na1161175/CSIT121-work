@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Image #1 </title>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> Home Page</a>
+                <a href="image01.html"> Image # 1</a>
+                <a href="image02.html"> Image # 2</a>
+                <a href="image03.html"> Image # 3</a>
+            </div>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+            <h1 class="center"><a href="https://www.pexels.com/photo/puppies-in-a-basket-15005209/" target="_blank" rel="noopener noreferrer">
+            Puppies in a Basket</a></h1>
+         <img src="images/free-photo-of-puppies-in-a-basket.jpeg" alt="Puppies in Garden" height="900" width="1230">
+         <main> 
+             <p>This is such a cute picture of three puppies in a basket. It is a JPEG file type.
+                JPEG stands for Joint Photographic Experts Group. It is a widely used format for digital photographs due to 
+                its efficient compression method, which significantly reduces file size while maintaining reasonable image quality.
+                JPEG files support up to 16.7 million colors, making them suitable for detailed photographs. 
+                They use lossy compression, where unnecessary data is removed to create smaller file sizes, though some image quality may be lost in the process.
+                I selected this image because I love puppies and this is an appealing portrait of them. 
+                Additionally, it is fortunate that the image is available under a Creative Commons license.
+             </p><br>
+                <p id="alert">Image:
+                 <a href="https://www.pexels.com/photo/puppies-in-a-basket-15005209/" target="_blank" rel="noopener noreferrer">
+                     Puppies in a Basket</a> by Chathura Anuradha Subasinghe from the website Pexels, licensed under
+                 <a href="https://creativecommons.org/public-domain/" target="_blank" rel="noopener noreferrer">Public Domain</a>.
+                        A label for works already free of copyright restrictions, available for anyone to use.
+                </p>
+         </main>
+             <footer>©2025 Khadija. All rights reserved</footer>
+        </div>
+        <script>
+         function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "#8d6a5e";
+             }
+             function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "#a2796a";
+             }
+        </script>  
+    </body>
+</html>
+
