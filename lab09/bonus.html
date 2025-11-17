@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reads the XML data using JavaScript</title>
+        <style>
+         table {
+             border-collapse: collapse;
+             width: 100%;
+             opacity: 0;               /* start hidden */
+             transition: opacity 0.6s ease-in; /* fade-in animation */
+            }
+
+         table.fade-in {
+             opacity: 1;               /* becomes visible */
+            }
+
+         th, td {
+             text-align: left;
+             padding: 8px;
+            }
+         tr:nth-child(even) {
+             background-color: #98d2ea;
+            }
+         th {
+             background-color: #000000;
+             color: white;
+            }
+         .button {
+             position: relative;
+             text-align: center;
+             padding: 20px;
+             border: 4px solid rgb(153, 215, 235);
+             background: rgba(156, 224, 111, 0.5);
+             color: rgb(0, 0, 0);
+             outline: none;
+             border-radius: 30px;
+             font-size: 30px;
+             width: 500px;
+            }
+         .button-container {
+             display: flex;
+             justify-content: center; 
+             align-items: center;
+            }
+         .button:hover {
+             color: black;
+             background: white;
+            }
+       </style>
+
+     <script>
+         function loadXMLDoc() {
+             let xmlhttp = new XMLHttpRequest();
+             xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    empDetails(this);
+                }
+            };
+             xmlhttp.open("GET", "employee.xml", true);
+             xmlhttp.send();
+         }
+
+         function empDetails(xml) {
+             let xmlDoc = xml.responseXML;
+             let tableHTML = `
+                <tr>
+                    <th>Firstname</th><th>Lastname</th>
+                    <th>Title</th><th>Division</th>
+                    <th>Building</th><th>Room</th>
+                </tr>`;
+             let employees = xmlDoc.getElementsByTagName("employee");
+
+            for (let i = 0; i < employees.length; i++) {
+                tableHTML += `
+                <tr>
+                    <td>${employees[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue}</td>
+                    <td>${employees[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue}</td>
+                    <td>${employees[i].getElementsByTagName("title")[0].childNodes[0].nodeValue}</td>
+                    <td>${employees[i].getElementsByTagName("division")[0].childNodes[0].nodeValue}</td>
+                    <td>${employees[i].getElementsByTagName("building")[0].childNodes[0].nodeValue}</td>
+                    <td>${employees[i].getElementsByTagName("room")[0].childNodes[0].nodeValue}</td>
+                </tr>`;
+            }
+
+            let table = document.getElementById("id");
+
+            table.innerHTML = tableHTML;
+
+            // Apply fade-in animation
+            table.classList.remove("fade-in");
+            void table.offsetWidth; // forces reflow so animation always triggers
+            table.classList.add("fade-in");
+         }
+
+         function toggleTable() {
+            const table = document.getElementById("id");
+            const btn = document.getElementById("toggleBtn");
+
+            if (table.innerHTML.trim() === "") {
+                loadXMLDoc();
+                btn.textContent = "Close Employee Data";
+            } else {
+                table.innerHTML = "";
+                table.classList.remove("fade-in");  // hide instantly
+                btn.textContent = "Get Employee Data";
+            }
+         }
+      </script>
+   </head>
+
+   <body>
+     <div class="button-container">
+        <button id="toggleBtn" type="button" class="button" onclick="toggleTable()">
+            Get Employee Data
+        </button>
+     </div>
+
+     <br><br>
+     <table id="id"></table>
+  </body>
+
+</html>
