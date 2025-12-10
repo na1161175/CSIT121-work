@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/finalstyle.css">
+        <title>Final Project</title>
+    </head>
+    <body>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/finalproject.html">Home</a>
+            <a href="/lab05/index.html">Responsive Layout</a>
+            <a href="/lab04/image01.html">Visual Media Lab</a>
+            <a href="/lab06/evaluation.html">UI/UX Evaluation</a>
+            <a href="/lab07/tierlist.html">Tables and Forms</a>
+            <a href="/lessonsleraned.html">Lessons Learned</a>
+            
+        </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer;color:beige;" onclick="openNav()">&#9776; Menu</span>
+     <nav>
+      <ul>
+        <li><a href="whatisit.html">Touch Events</a></li>
+        <li><a href="importance.html">Importance</a></li>
+        <li><a href="used.html">Usage</a></li>
+        <li><a href="sources.html">References</a></li>
+      </ul>
+     </nav>
+     <main>
+      <article>
+        <h1>Sources</h1>
+        <div class="references">
+        <ul>
+            <li><em>Touch Events.</em> (2013, October 10). https://www.w3.org/TR/touch-events/</li>
+            <li><em>W3Schools.com.</em> (n.d.). https://www.w3schools.com/jsref/obj_touchevent.asp</li>
+            <li><em>Touch events - Web APIs | MDN.</em> (n.d.). https://developer.mozilla.org/en-US/docs/Web/API/Touch_events</li>
+            <li>Skylark, A. (2025, January 13). <em>Master Touch Events for mobile Devices: A guide.</em> Master 
+                   Touch Events for Mobile Devices: A Guide - Topic. https://d-libro.com/topic/touch-events/?id=what-are-touch-events</li>
+        </ul></div>
+    </div>
+    <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+        </article>
+        </main>
+        <footer>©2025 Khadija. All rights reserved</footer>
+    </body>
+</html>
