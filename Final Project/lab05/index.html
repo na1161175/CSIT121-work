@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/finalstyle.css">
+        <title>Final Project</title>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/finalproject.html">Home</a>
+            <a href="/lab04/image01.html">Visual Media Lab</a>
+            <a href="/lab06/evaluation.html">UI/UX Evaluation</a>
+            <a href="/lab07/tierlist.html">Tables and Forms</a>
+            <a href="/lab10/whatisit.html">Touch Events</a>
+            <a href="/lessonsleraned.html">Lessons Learned</a>
+            
+        </div>
+        <main>
+            <article>
+        <div id="main">
+             <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+           <nav>
+             <ul>
+                <li><a href="#Blog_Post_1">Blog Post # 1</a></li>
+                <li><a href="#Blog_Post_2">Blog Post # 2</a></li>
+                <li><a href="#Blog_Post_3">Blog Post # 3</a></li>
+             </ul>
+           </nav>
+           <h1>Responsive Layout</h1>
+            <article id="Blog_Post_1">
+             <h2>Labs 1 & 2: HTML Basics</h2>
+             <p>I was initially confused about the placement of the main
+             , article, header, and body elements for this webpage,
+               but then I followed the wireframe of the assignment and eventually 
+             figured out where to put each.  </p>
+             <h3>What I Learned:</h3>
+             <ol>
+                <li>HTML Basics</li>
+                <li>Structuring Text</li>
+             </ol>
+             <p>Learning about HTML elements is very important as it sets the base. The websites that helped me the most were:</p>
+             <ul>
+                <li><a href="https://www.w3schools.com/tags/default.asp"> W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Web Docs</a></li>
+
+             </ul>
+            </article>
+            <article id="Blog_Post_2">
+            <h2>Lab 3: CSS Basics </h2>
+            <p> Working on Lab 03 was fun, but it was time-consuming
+                because we had to manually insert the 
+                fonts and colors, unlike office apps, 
+                where we can change them with a click.
+                However, I understand that HTML and
+                 Microsoft Office are different and 
+                 require different workflows.
+            </p>
+            <h3>What I Learned:</h3>
+            <ol>
+                <li>Adding Background Color</li>
+                <li>Adding different font styles and colors</li>
+                <li>Id Selectors</li>
+                <li>Class Selectors</li>
+            </ol>
+            <p>The websites that I found the most helpful while working on this assignment were:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/css_background.asp">CSS Backgrounds</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started">Getting started with CSS</a></li>
+            </ul>
+         </article>
+         <article id="Blog_Post_3">
+            <h2>Lab 5: Layout Lab </h2>  
+            <p>Responsive web design is all about making sure that the content is displayed well, 
+                regardless of the device used. It is recommended to start with mobile design because if it 
+                works on a small screen, it will be easier to expand it to larger screens. The main thing 
+                is to focus on making flexible layouts that adapt. We can achieve this by using media 
+                queries, which adjust column layouts, font sizes, and image sizes based on screen width. 
+                Also, it is important to keep buttons big enough to tap easily on touch screens so that 
+                people don't accidentally tap the wrong thing. For example, when navigating on phones, 
+                we want links stacked vertically so they're easy to tap. However, on desktops, there is 
+                enough space to spread them out horizontally. Additionally, it is essential to keep designs
+                simple and clean to help users process information more easily and avoid burdening pages 
+                with lots of text. It is also recommended to pair visuals with text, maintain visual
+                consistency and to develop a clear visual hierarchy.  </p>
+            <h3>What I Learned:</h3>
+            <ol>
+                <li>Creating a navigation menu at the top of the page that links to each blog post.
+                <li>Implementing a mobile-friendly single-column layout using CSS flexbox.</li>
+                <li>Creating a multi-column layout for desktop screens using media queries.</li>
+            </ol>
+            <p>The websites that I found the most helpful while working on this assignment were:</p>
+            <ul>
+                <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Flexbox Layout Guide</a></li>
+                <li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">Media Queries</a></li>
+            </ul> 
+            </article>
+     </div>
+     <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+     </article>
+     </main>
+     <footer>©2025 Khadija. All rights reserved</footer>
+    </body>
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/finalstyle.css">
+        <title>Final Project</title>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/lab05/index.html">Responsive Layout</a>
+            <a href="/lab04/image01.html">Visual Media Lab</a>
+            <a href="/lab06/evaluation.html">UI/UX Evaluation</a>
+            <a href="/lab10/whatisit.html">Touch Events</a>
+            <a href="/lessonsleraned.html">Lessons Learned</a>
+            
+        </div>
+        <main>
+     <article>
+        <div id="main">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+    <nav>
+      <ul>
+        <li><a href="tierlist.html">Tier List</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+      </ul>
+    </nav>
+    <h1>Tables & Forms</h1>        
+    <form method="post" aria-label="Contact Form">
+        <div>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Comments:</label>
+            <br>
+            <textarea id="message" name="message" placeholder="Share Your Thoughts"></textarea>
+        </div>
+        <div>
+            <label>Have you ever watched a korean tv series?</label>
+            <br>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="Yes" name="watched" value="Yes">
+
+            <label for="No">No</label>
+            <input type="radio" id="No" name="watched" value="No" >
+        </div>
+        <div>
+            <label for="quantity">If yes, how many shows from the tier list have you watched?</label>
+            <br>
+            <input type="number" id="quantity" name="quantity" min="0" max="6" value="0">
+        </div>
+        <div>
+            <label for="favorite">Choose your most favorite show</label>
+            <br>
+            <select id="favorite" name="favorite">
+                <option value="">Please Select</option>
+                <option value="Vincenzo">Vincenzo</option>
+                <option value="LittleWomen">Little Women</option>
+                <option value="WhenLifeGivesyouTangerines">When Life Gives you Tangerines</option>
+                <option value="BusinessProposal">Business Proposal</option>
+                <option value="ExtraordinaryAttorneyWoo">Extraordinary Attorney Woo</option>
+                <option value="Hometown-Cha-Cha-Cha">Hometown-Cha-Cha-Cha</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+   </div>
+   <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+   </article>
+   </main>
+   <footer>©2025 Khadija. All rights reserved</footer>
+   </body>
+</html>
