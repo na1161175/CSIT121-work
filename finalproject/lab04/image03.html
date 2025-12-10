@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/finalstyle.css">
+        <title>Final Project</title>
+    </head>
+    <body>
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/CSIT 121/Lab/finalproject/finalproject.html">Home</a>
+            <a href="/CSIT 121/Lab/finalproject/lab05/index.html">Responsive Layout</a>
+            <a href="/CSIT 121/Lab/finalproject/lab06/evaluation.html">UI/UX Evaluation</a>
+            <a href="/CSIT 121/Lab/finalproject/lab07/tierlist.html">Tables and Forms</a>
+            <a href="/CSIT 121/Lab/finalproject/lab10/whatisit.html">Touch Events</a>
+            <a href="/CSIT 121/Lab/finalproject/lessonsleraned.html">Lessons Learned</a> 
+        </div>
+        <main>
+     <article>
+     <div id="main">
+        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span> 
+        <nav>
+                <ul>
+                    <li><a href="image01.html"> Image # 1</a></li>
+                    <li><a href="image02.html"> Image # 2</a></li>
+                    <li><a href="image03.html"> Image # 3</a></li>
+                </ul>
+            </nav>  
+        <h1>Visual Media Lab</h1>
+        <img src="images/mandala-png-illustration-graphic-1716135799dc9.png" alt="Mandala" height="900" width="1200">
+        <h2 class="center"><a href="https://www.publicdomainpictures.net/en/view-image.php?image=606617&picture=mandala-png-illustration-graphic" target="_blank" rel="noopener noreferrer">
+                     Mandala Png Illustration Graphics</a></h2>
+            <p>This image shows a Mandala and has PNG file type.
+                PNG stands for Portable Network Graphic and it supports millions of colors, multiple levels of transparency and 
+                interlacing.It uses lossless compression and is well-supported by modern browsers.
+                Growing up, my sister used to make these and ask us to color these just to keep us busy. This brought back a childhood
+                memory, thats why I used this image.<br></p>
+                <p id="alert">Image:
+                <a href="https://www.publicdomainpictures.net/en/view-image.php?image=606617&picture=mandala-png-illustration-graphic" target="_blank" rel="noopener noreferrer">
+                     Mandala Png Illustration Graphics</a> by Freddy Dendoktoor from the website Public Domain Pictures, licensed under
+                     <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 Public Domain</a>. 
+                        Which means that we can use and modify it for our personal and commercial projects.</p>
+                        <ul>
+                             <li><a href="index.html"> Home Page</a></li>
+                             <li><a href="image01.html"> Image # 1</a></li>
+                             <li><a href="image02.html"> Image # 2</a></li>
+                        </ul>
+     </div>
+      <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+        </article>
+     </main>
+     <footer>©2025 Khadija. All rights reserved</footer>
+    </body>
+</html>
